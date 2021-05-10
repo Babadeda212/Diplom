@@ -1,0 +1,124 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: #F0B27A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 100%;
+}
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.header__title{
+    margin-top: 29px;
+}
+.logo{
+    width: 140px;
+    height: 42px;
+    margin: 29px 0;
+    background-color: black;
+}
+.main{
+    height: 100%;
+}
+.backgroundImg{
+    width: 100%;
+    opacity: 0.5;
+}
+.main__text{
+    height: 200px;
+    border-top: #FAFF06 1px solid;
+    border-bottom: #FAFF06 1px solid;
+}
+.main__text-p{
+    max-width: 100%;
+    color: white;
+}
+.main__game{
+    margin: 30px 0;
+    height: 550px;
+    border-bottom: #FAFF06 1px solid;
+}
+.footer__copyright{
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    margin-bottom: 30px;
+}
+.main__image_game{
+    width: 200px;
+    height: 200px;
+}
+.main__game{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.popup{
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s ease-in-out,visibility .3s ease-in-out;
+}
+.popup__container{
+    height: 200px;
+    max-width: 700px;
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+    position: relative;
+    margin: 360px auto 0;
+    flex-direction: column;
+}
+.popup__open{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s ease-in-out,visibility .3s ease-in-out;
+}
+.popup__buttonClose{
+    width: 50px;
+    height: 50px;
+    margin:0;
+}
+.popup__buttonClose:hover{
+    cursor: pointer;
+}
+.popup__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.popup__test{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.popup__question{
+    margin: 10px 0;
+}
+.popup__answer{
+    margin: 10px 0 10px 10px;
+    width: 40px;
+    height: 20px;
+}
+.popup__title{
+    margin-left: 20px;
+}
+.popup__answer_hidden{
+    visibility: hidden;
+}
