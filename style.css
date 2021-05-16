@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 html{
     height: 100%;
+    background: url(https://webfon.top/wp-content/uploads/2016/10/tetrad-v-kletku.jpg) left top repeat;
 }
 body{
-    background-color: #F0B27A;
+    height: 100%;
+}
+.page{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10,8 +15,16 @@ body{
     max-width: 1280px;
     height: 100%;
 }
+.back{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+}
 .header{
-    height: 100px;
     display: flex;
     justify-content: space-between;
 
@@ -20,10 +33,7 @@ body{
     margin-top: 29px;
 }
 .logo{
-    width: 140px;
-    height: 42px;
-    margin: 29px 0;
-    background-color: black;
+    height: 70px;
 }
 .main{
     height: 100%;
@@ -33,35 +43,66 @@ body{
     opacity: 0.5;
 }
 .main__text{
-    height: 200px;
-    border-top: #FAFF06 1px solid;
-    border-bottom: #FAFF06 1px solid;
+    margin-top: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 .main__text-p{
-    max-width: 100%;
-    color: white;
+    max-width: 500px;
+    color:#333333;
+    font-family: 'Indie Flower', cursive;
+    font-size: 26pt;
+}
+.main__text-img{
+    height: 260px;
+    margin-right: 150px;
 }
 .main__game{
     margin: 30px 0;
-    height: 550px;
-    border-bottom: #FAFF06 1px solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main__game_text{
+    max-width: 500px;
+    color:#333333;
+    font-family: 'Indie Flower', cursive;
+    font-size: 26pt;
+}
+.main__game_groop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__game_button{
+    font-family: 'Indie Flower', cursive;
+    display: inline-block ;
+    text-decoration: none ;
+    background-color: #b7b7b7;
+    color: #333333 ;
+    border: 5px solid #333333;
+    border-radius: 37px; 
+    font-size: 20px ;
+    padding: 10px 29px;
+    transition: all 0.6s ease;
+}
+.main__game_button:hover{
+   text-decoration: none;
+    background-color: #333333;
+    color: #b7b7b7;
+    border-color: #333333;
 }
 .footer__copyright{
-    color: white;
+    color:#333333;
+    font-family: 'Indie Flower', cursive;
+    font-size: 26pt;
     text-decoration: none;
 }
 .footer{
     margin-bottom: 30px;
 }
-.main__image_game{
-    width: 200px;
-    height: 200px;
-}
-.main__game{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+
 .popup{
     background: rgba(0, 0, 0, 0.9);
     position: fixed;
@@ -75,14 +116,14 @@ body{
     transition: opacity .3s ease-in-out,visibility .3s ease-in-out;
 }
 .popup__container{
-    height: 200px;
     max-width: 700px;
-    background-color: white;
+    background: url(https://webfon.top/wp-content/uploads/2016/10/tetrad-v-kletku.jpg) left top repeat;
     display: flex;
     border-radius: 15px;
     position: relative;
     margin: 360px auto 0;
     flex-direction: column;
+    padding: 10px;
 }
 .popup__open{
     visibility: visible;
@@ -107,9 +148,13 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+    align-items: center;
 }
 .popup__question{
     margin: 10px 0;
+    color:#333333;
+    font-family: 'Indie Flower', cursive;
+    font-size: 26pt;
 }
 .popup__answer{
     margin: 10px 0 10px 10px;
@@ -117,8 +162,30 @@ body{
     height: 20px;
 }
 .popup__title{
+    color:#333333;
+    font-family: 'Indie Flower', cursive;
+    font-size: 26pt;
     margin-left: 20px;
 }
 .popup__answer_hidden{
     visibility: hidden;
+}
+.popup__button{
+    margin-bottom: 15px;
+    font-family: 'Indie Flower', cursive;
+    display: inline-block ;
+    text-decoration: none ;
+    background-color: #b7b7b7;
+    color: #333333 ;
+    border: 5px solid #333333;
+    border-radius: 37px; 
+    font-size: 20px ;
+    padding: 10px 29px;
+    transition: all 0.6s ease;
+}
+.popup__button:hover{
+    text-decoration: none;
+    background-color: #333333;
+    color: #b7b7b7;
+    border-color: #333333;   
 }

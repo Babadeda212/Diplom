@@ -9,28 +9,29 @@
     <title>Тест</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-        </div>
-        <h1 class="header__title">Текст</h1>
-    </header>
-    <main class="main">
-        <div class="main__text">
-            <p class="main__text-p">
-                Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-            </p>
-        </div>
-        <div class="main__game">
-            <img class="main__image_game" src="Картинка.png">
-            <div class="main__game_groop">
-                <p class="main__game_text">Здесь будет сопровождающий текст к игре и как она работает</p>
-                <button class="main__game_button">Начать игру</button>
+    <div class="page">
+        <header class="header">
+            <img src="logo.png" class="logo">
+        </header>
+        <main class="main">
+            <div class="main__text">
+                <img src="sova.gif" class="main__text-img">
+                <p class="main__text-p">
+                    Привет, этот сайт сделан для того что бы ты научился решать логические задачи!
+                </p>
             </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <a class="footer__copyright" href="#" target="_blank">&copy; 2020 Темирханова Ангелина</a>
-    </footer>
+            <div class="main__game">
+                <div class="main__game_groop">
+                    <p class="main__game_text">Чтобы начать, нажми кнопку "Начать игру". За каждый правильный ответ, будет прибоваляться 1 балл. Всего 10 баллов. Удачи!</p>
+                    <button class="main__game_button">Начать игру</button>
+                </div>
+                <img class="main__image_game" src="mainPic.png">
+            </div>
+        </main>
+        <footer class="footer">
+            <a class="footer__copyright" href="#" target="_blank">&copy; 2020 Темирханова Ангелина</a>
+        </footer>
+    </div>
     <div class="popup">
         <div class="popup__container">
             <div class="popup__header">
@@ -43,6 +44,9 @@
             </div>
             <button class="popup__button" type="click" >Следующий</button>
         </div>
+    </div>
+    <div class="back">
+
     </div>
     <script src="script.js"></script>
 </body>
